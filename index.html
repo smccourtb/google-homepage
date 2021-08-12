@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google</title>
+        <style>
+            .navbar-text-links {
+                text-decoration: none;
+                color: #222;
+                font-family: arial, sans-serif;
+                font-size: 14px;
+            }
+            ol {
+                list-style-type: none;
+                margin-top: 10;
+                padding: 0;
+                display: flex;
+            }
+            #logo {
+                display:flex;
+                justify-content: center;
+            }
+            #search {
+                display: flex;
+                padding: 20px;
+                width: 75%;
+                margin: auto;
+                flex-flow: column;
+            }
+            #search-buttons {
+                display:flex;
+                justify-content: space-around;
+                padding-top: 10px;
+            }
+            #search-bar {
+                display: flex;
+                flex-flow: row;
+                border: thin solid grey;
+                border-radius: 45px;
+                padding: 5px;
+            }
+            .button {
+                font-size: 16px;
+                box-shadow: 0 1px 1px rgba(0,0,0,.1);
+                background-color: #f8f9fa;
+                border: 1px solid #dadce0;
+                color: #202124;
+                padding-right: 16px;
+                padding-left: 16px;
+                height: 36px;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <ol>
+         <li><a style="margin-right:10px; margin-left:10px" class="navbar-text-links" href="">About</a></li>  
+         <li> <a style="margin-right:500px" class="navbar-text-links" href="">Store</a></li>  
+         <li> <a style="margin-right:10px" class="navbar-text-links" href="">Gmail</a></li>  
+         <li> <a class="navbar-text-links" href="">Images</a></li> 
+        </ol>
+
+        <div id="logo"> <img height="92px" width="272px" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"></div>
+        
+        <div>
+         <form id="search">
+             <div id="search-bar">
+                 <img style="height:20px; width:20px; margin:auto; padding:5px; color:lightgrey" src="search_black_24dp.svg">
+                 <input style="border-style:none; font-size: 16px; width:100%; height:34px; " type="text">
+             </div>
+             <div id="search-buttons">
+                 <input class="button" type="submit" value="Google Search">
+                 <input class="button" type="submit" value="I'm Feeling Lucky">
+             </div>
+         </form>
+        </div>
+        <footer></footer>
+    </body>
+         
+        
+    </body>
+</html>
