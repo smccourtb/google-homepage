@@ -3,15 +3,36 @@
     <head>
         <title>Google</title>
         <style>
-            .navbar-text-links {
-                text-decoration: none;
-                color: #222;
+            body {
+                margin: 0px;
                 font-family: arial, sans-serif;
                 font-size: 14px;
             }
+            .navbar-text-links {
+                text-decoration: none;
+                color: #222;
+                
+            }
+            #navbar {
+                display: flex;
+                align-items: center;
+                padding: 6px;
+                background-color: linen;
+                height: 60px;
+                box-sizing: border-box;
+                justify-content: space-between;
+            }
+            #navbar-left {
+                display:flex;
+                justify-content:space-around;
+            }
+            #navbar-right {
+                display:flex;
+                justify-content:space-around;
+                padding: 10px;
+            }
             ol {
                 list-style-type: none;
-                margin-top: 10;
                 padding: 0;
                 display: flex;
             }
@@ -53,29 +74,51 @@
         </style>
     </head>
     <body>
-        <ol>
-         <li><a style="margin-right:10px; margin-left:10px" class="navbar-text-links" href="">About</a></li>  
-         <li> <a style="margin-right:500px" class="navbar-text-links" href="">Store</a></li>  
-         <li> <a style="margin-right:10px" class="navbar-text-links" href="">Gmail</a></li>  
-         <li> <a class="navbar-text-links" href="">Images</a></li> 
-        </ol>
-
-        <div id="logo"> <img height="92px" width="272px" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"></div>
-        
         <div>
-         <form id="search">
-             <div id="search-bar">
-                 <img style="height:20px; width:20px; margin:auto; padding:5px; color:lightgrey" src="search_black_24dp.svg">
-                 <input style="border-style:none; font-size: 16px; width:100%; height:34px; " type="text">
-             </div>
-             <div id="search-buttons">
-                 <input class="button" type="submit" value="Google Search">
-                 <input class="button" type="submit" value="I'm Feeling Lucky">
-             </div>
-         </form>
-        </div>
-        <footer></footer>
-    </body>
+            <div id="navbar">
+                <div id="navbar-left">
+                    <ol>
+                        <li><a style="padding:10px; margin: left 15px;px;" class="navbar-text-links" href="">About</a></li>  
+                        <li> <a style="padding:5px;" class="navbar-text-links" href="">Store</a></li>  
+                    </ol> 
+                </div>
+                <div id="navbar-right">
+                    <div style="padding-left: 20px; padding-right:20px;">
+                        <ol>
+                            <li> <a class="navbar-text-links" href="">Gmail</a></li>  
+                            <li> <a class="navbar-text-links" href="">Images</a></li> 
+                        </ol>
+                    </div>
+                    <div>
+                        <ol>
+                            <li><img src="apps_black_24dp.svg" href=""></li>
+                            <li><a style="padding-top: 10px; padding-bottom: 10px; display:inline-block; background:#2b7de9; border:1px solid transparent; color: white; max-height:36px; width:96px; border-radius:5px; text-align:center; vertical-align:middle;" class="navbar-text-links" href="" target="_top">Sign in</a></li>
+                        </ol>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div id="logo"> 
+                <img height="92px" width="272px" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+            </div>
+            <div>
+                <form id="search">
+                    <div id="search-bar">
+                        <img style="height:20px; width:20px; margin:auto; padding:5px; color:lightgrey" src="search_black_24dp.svg">
+                        <input style="border-style:none; font-size: 16px; width:100%; height:34px; " type="text">
+                    </div>
+                    <div id="search-buttons">
+                        <input class="button" type="submit" value="Google Search">
+                        <input class="button" type="submit" value="I'm Feeling Lucky">
+                    </div>
+                </form>
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
          
         
     </body>
